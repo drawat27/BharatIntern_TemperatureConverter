@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature converter</title>
+    <script src="https://kit.fontawesome.com/edad7a590c.js" crossorigin="anonymous"></script>
+
+
+    <!-- .................CSS..................... -->
+    <style>
+        body {
+            padding:0;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h1 i{
+            margin-right: 5px;
+            color: red;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg,#153677,#4e085f,#3ef43e);
+            padding: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            
+        }
+        #converter{
+            width: 100%; 
+            max-width: 550px; 
+            background-image: url(background-2340768_1280.jpg);
+            margin: 100px auto 20px;   
+            padding: 50px;  
+            border-radius: 10px;
+            position: center;
+        }
+        .input{
+            width: 250px;
+            height: 25px;
+            border: 0px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .input-div {
+            display: flexbox;
+            padding-top: 17px;
+        }
+
+        label {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body><div class="container">
+    <div id="converter">
+        <h1><i class="fa-solid fa-temperature-high"></i>Temperature converter</h1>
+
+        <div class="input-div">
+            <label>Celsius</label>
+            <br>
+            <input type="number" value="0" name="celcius" id="celcius" class="input">
+        </div>
+        <div class="input-div">
+            <label>Farenheit</label>
+            <br>
+            <input type="number" value="32" name="fahrenheit" id="fahrenheit" class="input">
+        </div>
+        <div class="input-div">
+            <label>Kelvin</label>
+            <br>
+            <input type="number" value="273.15" name="kelvin" id="kelvin" class="input">
+        </div>
+    </div>
+</div>
+
+    <!-- ...............JAVAScript................ -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
